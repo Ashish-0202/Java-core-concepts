@@ -71,3 +71,23 @@ We can also use the FileInputStream method or BufferedInputStream to read from a
 
 Note: FileInputStream is useful to read data from a file in the form of sequence of bytes. FileInputStream is meant for reading streams of raw bytes such as image data. For reading streams of characters, consider using FileReader.
 ***
+
+**renameTo():**
+
+Used to rename the file in a given location.
+
+***
+
+**FileInputStream:**
+
+FileInputStream class is useful to read data from a file in the form of sequence of bytes. FileInputStream is meant for reading streams of raw bytes such as image data. For reading streams of characters, consider using FileReader.
+
+    FileInputStream fis=new FileInputStream("\\path\\to\\file\\filename.txt");
+    //If file is not present it will create new file
+
+**FileOutputStream:**
+
+FileOutputStream is an outputstream for writing data/streams of raw bytes to file or storing data to file. FileOutputStream is a subclass of OutputStream. To write primitive values into a file, we use FileOutputStream class. For writing byte-oriented and character-oriented data, we can use FileOutputStream but for writing character-oriented data, FileWriter is more preferred.
+
+    FileOutputStream fos=new FileOutputStream("\\path\\to\\file\\filename.txt");
+    //If file is not present it will create new file
