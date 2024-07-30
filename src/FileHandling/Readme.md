@@ -91,3 +91,26 @@ FileOutputStream is an outputstream for writing data/streams of raw bytes to fil
 
     FileOutputStream fos=new FileOutputStream("\\path\\to\\file\\filename.txt");
     //If file is not present it will create new file
+
+***
+**BufferedOutputStream:**
+
+* BufferedOutputStream class works using the other output streams.
+* It is used to write the data in the form of stream of bytes more efficiently.
+* BufferedOutputStream contains an internal buffer of 8192 bytes.
+* Whenever we write bytes using buffered output stream, first it will write it in its internal buffer instead of disk.
+* Once the buffer is filled or stream is closed, the whole buffer is written into the disk.
+* It reduces the direct contact with the disk.
+
+
+    FileOutputStream fileOutputStream = new FileOutputStream("D:\\Java_SpringBoot\\Demo\\TestingNew.txt");
+    java.io.BufferedOutputStream bufferedOutputStream=new java.io.BufferedOutputStream(fileOutputStream);
+    
+    String data="Hello Guys. writing data using BufferedOutputStream";
+    bufferedOutputStream.write(data.getBytes());
+
+    bufferedOutputStream.close();
+
+    bufferedOutputStream.flush();
+
+ 
