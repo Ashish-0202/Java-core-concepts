@@ -7,4 +7,4 @@
 * All methods in interface are public and abstract by default.
 * All the variables declared in interface are constants i.e., public, static & final.
 * Since java 8 we can have default and static methods in an interface.
-* A class can implement more than one interface by which we can achieve multiple interface.
+* A class can implement more than one interface by which we can achieve multiple inheritance.

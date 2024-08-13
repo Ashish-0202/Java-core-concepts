@@ -10,6 +10,7 @@ public class Transportation {
         Car car=new Car();
         System.out.println(car.Vtype());
         System.out.println(car.wheels());
+        car.defaultmethod();
 
     }
 }
